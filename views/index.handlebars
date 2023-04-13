@@ -1,0 +1,33 @@
+<div class="page-container container">
+<div class="row">
+    <div class="col-12">
+        <h3 class="logo">Web <span class="logo-letter">RTC</span></h3>
+    </div>
+    <div class="col-12">
+        <i>ChatRoulette</i>
+    </div>
+    <div class="col-12">
+        <h5><span id="userCount">0</span> People Online</h5>
+    </div>
+</div>
+    <div class="main-row row">
+        <div class="controls-container flex-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <button id="search" class="btn btn-primary control-btn" onclick="toggleConnection()">
+                        Connect
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <video id="remote-video" class="video-player remote-video col-6" autoplay playsinline
+                poster="/files/img/loader.gif"></video>
+            <video id="local-video" class="video-player local-video col-6" autoplay muted playsinline></video>
+        </div>
+    </div>
+</div>
+
+<script src="/files/js/config.js"></script>
+<script src="/files/js/index.js"></script>
+<link rel="stylesheet" href="/files/css/index.css">
